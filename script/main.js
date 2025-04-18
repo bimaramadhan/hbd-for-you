@@ -1,5 +1,15 @@
 // Animation Timeline
 const animationTimeline = () => {
+  // Coba mainkan audio saat animasi mulai
+  const audio = document.getElementById("audio-1");
+  audio.play().catch((e) => {
+    console.warn("Autoplay diblokir, menunggu interaksi user...");
+    // Jika autoplay gagal, menunggu klik user untuk memulai audio
+    document.addEventListener("click", () => {
+      audio.play();
+    }, { once: true });
+  });
+
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
@@ -265,9 +275,6 @@ const animationTimeline = () => {
       },
       "+=1"
     );
-
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
