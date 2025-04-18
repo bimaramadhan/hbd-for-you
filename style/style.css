@@ -126,7 +126,7 @@ body {
   position: absolute;
   width: 80px;
   top: 50px; /* Ubah posisi vertikal topi */
-  left: 60%; /* Ubah posisi horizontal topi */
+  left: 160%; /* Ubah posisi horizontal topi */
   transform: translateX(-50%);
 }
 
