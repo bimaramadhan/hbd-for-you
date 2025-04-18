@@ -232,6 +232,14 @@ body {
   cursor: pointer;
 }
 
+#clickText {
+  font-size: 1.5rem;  /* Adjust the font size */
+  font-weight: lighter;
+  margin-top: 10px;   /* Adds some space between the lines */
+  cursor: pointer;   /* Adds a pointer cursor to indicate it's clickable */
+  color: #1faee2;     /* Change color to make it stand out (optional) */
+}
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
