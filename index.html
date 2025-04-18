@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body onclick="document.getElementById('audio-1').play();">
-  <div class="container" >
+<body>
+  <div class="container">
     <div class="one">
       <h1 class="one">Hey
-        <span id="name" >Niza</span>
+        <span id="name">Niza</span>
       </h1>
       <p class="two" id="greetingText">guess what :)</p>
     </div>
@@ -24,7 +24,7 @@
     </div>
     <div class="four">
       <div class="text-box">
-        <p class="hbd-chatbox">Barakallah fii umrik!! Yeeeyy happy birthday ya... Wish u all the best</p>
+        <p class="hbd-chatbox">Barakallah fii umrik!! Yeeeyy happy birthday yaa sayang... Wish u all the best 🤗😘</p>
         <p class="fake-btn">Kirim</p>
       </div>
     </div>
@@ -112,9 +112,6 @@
       <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
         <circle cx="20" cy="20" r="20" />
       </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
     </div>
     <div class="nine">
       <p>Oke. kasih tau aku ya kalau kamu suka</p>
@@ -126,10 +123,18 @@
     <source src="./ulang.mpeg" type="audio/ogg">
     <source src="./ulang.mpeg" type="audio/mpeg">
     Your browser does not support the audio element.
-    </audio>
-</body>
+  </audio>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript" src="script/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script type="application/javascript" src="script/main.js"></script>
+
+  <script>
+    // Ensure the audio starts playing when the page is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      var audio = document.getElementById("audio-1");
+      audio.play(); // Start playing the audio when the DOM is ready
+    });
+  </script>
+</body>
 
 </html>
