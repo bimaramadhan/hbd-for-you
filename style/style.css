@@ -9,7 +9,7 @@ body {
 
 .container {
   height: 100vh;
-  width: 100vh;
+  width: 100vw; /* Memperbaiki lebar container menjadi 100% dari lebar layar */
   margin: 0 auto;
   text-align: center;
   visibility: hidden;
@@ -124,10 +124,10 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: 50px; /* Ubah posisi vertikal topi */
-  left: 160%; /* Ubah posisi horizontal topi */
-  transform: translateX(-50%);
+  top: -35px; /* Jarak topi dari bagian atas gambar */
+  left: 50%;  /* Menempatkan topi di tengah secara horizontal */
+  transform: translateX(-50%); /* Memindahkan topi ke kiri setengah dari lebar topi */
+  width: 80px; /* Ukuran topi */
 }
 
 .baloons img {
@@ -233,14 +233,14 @@ body {
 }
 
 #clickText {
-  font-size: 0.1rem;  /* Adjust the font size */
+  font-size: 1.5rem;  /* Ukuran teks */
   font-weight: lighter;
-  margin-top: 10px;   /* Adds some space between the lines */
-  cursor: pointer;   /* Adds a pointer cursor to indicate it's clickable */
-  color: #1faee2;     /* Change color to make it stand out (optional) */
+  margin-top: 10px;   /* Memberi jarak antara teks dan elemen lainnya */
+  cursor: pointer;   /* Mengubah kursor ketika diarahkan ke teks */
+  color: #1faee2;     /* Warna teks */
 }
 
-/* Media Queries */
+/* Media Queries untuk responsif */
 @media screen and (max-height: 1000px) {
   .six .hat {
     left: 40%;
