@@ -233,7 +233,7 @@ body {
 }
 
 #clickText {
-  font-size: 0.5rem;  /* Adjust the font size */
+  font-size: 0.1rem;  /* Adjust the font size */
   font-weight: lighter;
   margin-top: 10px;   /* Adds some space between the lines */
   cursor: pointer;   /* Adds a pointer cursor to indicate it's clickable */
