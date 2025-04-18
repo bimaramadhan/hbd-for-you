@@ -114,20 +114,22 @@ body {
 
 .six {
   position: relative;
+  display: inline-block;
 }
 
 .six img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
 .six .hat {
   position: absolute;
-  top: -35px; /* Jarak topi dari bagian atas gambar */
-  left: 50%;  /* Menempatkan topi di tengah secara horizontal */
-  transform: translateX(-50%); /* Memindahkan topi ke kiri setengah dari lebar topi */
-  width: 80px; /* Ukuran topi */
+  top: -35px;
+  left: 0%;
+  transform: translateX(-50%);
+  width: 80px;
+  z-index: 2;
 }
 
 .baloons img {
