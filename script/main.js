@@ -211,12 +211,10 @@ const animationTimeline = () => {
       opacity: 0
     })
     .to(".hat", 0, {
-      clearProps: "transform"
-    })
-    .to(".hat", 0, {
-      css: {
-        transform: "translateX(-50%)"
-      }
+      x: "-50%",
+      left: "50%",
+      clearProps: "rotation,y",
+      overwrite: "auto"
     });
     .staggerFrom(
       ".wish-hbd span",
