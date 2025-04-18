@@ -160,7 +160,7 @@ const animationTimeline = () => {
       ".idea-6 span",
       0.8,
       {
-        scale: 3,
+        scale: 1.5,
         opacity: 0,
         rotation: 15,
         ease: Expo.easeOut
@@ -171,7 +171,7 @@ const animationTimeline = () => {
       ".idea-6 span",
       0.8,
       {
-        scale: 3,
+        scale: 1.5,
         opacity: 0,
         rotation: -15,
         ease: Expo.easeOut
@@ -205,7 +205,7 @@ const animationTimeline = () => {
       "-=2"
     )
     .from(".hat", 0.5, {
-      x: -100,
+      x: -150,
       y: 350,
       rotation: -180,
       opacity: 0
